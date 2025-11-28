@@ -1,6 +1,4 @@
-"scripts": {
-  "build": "next telemetry disable && next build"
-}
+
 
 {
   "name": "devportal-portfolio",
