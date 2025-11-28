@@ -1,22 +1,10 @@
-
-
 {
-  "name": "devportal-portfolio",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "next": "14.2.12",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "next-themes": "^0.3.0",
-    "framer-motion": "^11.3.31",
-    "discord-embed": "^1.0.3"
+    "framer-motion": "^11.3.31"
   },
   "devDependencies": {
     "@types/node": "20.14.10",
