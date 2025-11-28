@@ -1,12 +1,13 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>M Choirul Azam | Full-Stack Developer</title>
-  <meta name="description" content="Full-stack developer specializing in scalable web applications, cloud architecture, and modern JavaScript frameworks.">
+  <title>Alex Rivera | Professional Developer Portfolio</title>
+  <meta name="description" content="Experienced full-stack developer specializing in scalable web applications using modern technologies. Explore my projects, code samples, and professional network.">
   
-  <!-- Fonts -->
+  <!-- Noto Sans (Discord's font) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
-  <!-- CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,15 +27,15 @@
     <div class="sidebar-header">
       <div class="logo">
         <i class="fab fa-discord"></i>
-        <span>DevPortal</span>
+        <span>DevPortfolio</span>
       </div>
       <div class="user-card">
         <div class="avatar">AR</div>
         <div class="user-info">
-          <div class="username">Choazmmm</div>
+          <div class="username">Alex Rivera</div>
           <div class="status">
             <span class="status-dot"></span>
-            Online
+            Available for Collaboration
           </div>
         </div>
       </div>
@@ -43,72 +44,18 @@
     <div class="nav-section">
       <div class="nav-title">Overview</div>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#home" class="nav-link active">
-            <i class="fas fa-home"></i> 
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">
-            <i class="fas fa-user"></i> 
-            <span>About Me</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#skills" class="nav-link">
-            <i class="fas fa-code-branch"></i> 
-            <span>Tech Stack</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#projects" class="nav-link">
-            <i class="fas fa-layer-group"></i> 
-            <span>Projects</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#code" class="nav-link">
-            <i class="fas fa-code"></i> 
-            <span>Code Samples</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#experience" class="nav-link">
-            <i class="fas fa-briefcase"></i> 
-            <span>Experience</span>
-          </a>
-        </li>
+        <li class="nav-item"><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link"><i class="fas fa-layer-group"></i> Projects</a></li>
+        <li class="nav-item"><a href="#code" class="nav-link"><i class="fas fa-code"></i> Code Samples</a></li>
       </ul>
     </div>
 
     <div class="nav-section">
-      <div class="nav-title">Connect</div>
+      <div class="nav-title">Professional Network</div>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">
-            <i class="fas fa-envelope"></i> 
-            <span>Contact</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/alexrivera" target="_blank" class="nav-link">
-            <i class="fab fa-github"></i> 
-            <span>GitHub</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://linkedin.com/in/alexrivera" target="_blank" class="nav-link">
-            <i class="fab fa-linkedin-in"></i> 
-            <span>LinkedIn</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://twitter.com/alexrivera" target="_blank" class="nav-link">
-            <i class="fab fa-twitter"></i> 
-            <span>Twitter</span>
-          </a>
-        </li>
+        <li class="nav-item"><a href="#discord" class="nav-link"><i class="fab fa-discord"></i> Discord Community</a></li>
+        <li class="nav-item"><a href="https://github.com/alexrivera" target="_blank" class="nav-link"><i class="fab fa-github"></i> GitHub Profile</a></li>
+        <li class="nav-item"><a href="https://linkedin.com/in/alexrivera" target="_blank" class="nav-link"><i class="fab fa-linkedin-in"></i> LinkedIn Network</a></li>
       </ul>
     </div>
   </aside>
@@ -117,12 +64,10 @@
   <main class="main">
     <header class="header">
       <div class="header-left">
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <button class="menu-toggle" id="menu-toggle">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="breadcrumb">
-          <span class="breadcrumb-item active">Dashboard</span>
-        </div>
+        <div class="header-title">Professional Developer Dashboard</div>
       </div>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
         <i class="fas fa-moon"></i>
@@ -130,272 +75,89 @@
     </header>
 
     <div class="content">
-      <!-- Home Section -->
-      <section id="home" class="section">
-        <div class="hero">
-          <h1 class="page-title fade-in">Welcome back, Azam 👋</h1>
-          <p class="page-subtitle fade-in-delay">Building the future, one commit at a time. Currently working on cloud-native applications and open-source projects.</p>
-        </div>
+      <section id="home">
+        <h1 class="page-title">Welcome, Alex Rivera</h1>
+        <p class="page-subtitle">Senior Full-Stack Developer with 8+ years of experience in building robust, scalable applications. Currently managing 3 active projects with a focus on innovation and efficiency. Let's collaborate on your next big idea.</p>
 
-        <div class="card slide-up">
-          <div class="card-header">
-            <h2 class="card-title">Quick Stats</h2>
-            <span class="badge-info">Updated today</span>
-          </div>
-          <div class="stats-grid">
-            <div class="stat-card">
-              <div class="stat-icon" style="background: rgba(88, 101, 242, 0.1); color: var(--accent);">
-                <i class="fas fa-folder"></i>
-              </div>
-              <div class="stat-content">
-                <div class="stat-label">Total Projects</div>
-                <div class="stat-value">12</div>
-                <div class="stat-change positive">+2 this month</div>
-              </div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-icon" style="background: rgba(59, 165, 93, 0.1); color: var(--success);">
-                <i class="fas fa-rocket"></i>
-              </div>
-              <div class="stat-content">
-                <div class="stat-label">Live Apps</div>
-                <div class="stat-value">8</div>
-                <div class="stat-change positive">100% uptime</div>
-              </div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-icon" style="background: rgba(250, 166, 26, 0.1); color: var(--warning);">
-                <i class="fab fa-github"></i>
-              </div>
-              <div class="stat-content">
-                <div class="stat-label">GitHub Stars</div>
-                <div class="stat-value">2.4k+</div>
-                <div class="stat-change positive">+340 this year</div>
-              </div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-icon" style="background: rgba(237, 66, 69, 0.1); color: var(--danger);">
-                <i class="fas fa-code-branch"></i>
-              </div>
-              <div class="stat-content">
-                <div class="stat-label">Contributions</div>
-                <div class="stat-value">1.8k+</div>
-                <div class="stat-change">This year</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="about" class="section">
         <div class="card">
           <div class="card-header">
-            <h2 class="card-title">About Me</h2>
+            <h2 class="card-title">Professional Overview</h2>
           </div>
-          <div class="about-content">
-            <p class="about-text">
-              I'm a passionate full-stack developer with 6+ years of experience building scalable web applications. 
-              I specialize in modern JavaScript frameworks, cloud architecture, and DevOps practices. 
-              My goal is to create elegant solutions that solve real-world problems.
-            </p>
-            <p class="about-text">
-              When I'm not coding, you'll find me contributing to open-source projects, writing technical blogs, 
-              or exploring new technologies. I believe in continuous learning and sharing knowledge with the developer community.
-            </p>
-            <div class="about-highlights">
-              <div class="highlight-item">
-                <i class="fas fa-graduation-cap"></i>
-                <div>
-                  <strong>Education</strong>
-                  <p>B.S. Computer Science, MIT</p>
-                </div>
-              </div>
-              <div class="highlight-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                  <strong>Location</strong>
-                  <p>San Francisco, CA</p>
-                </div>
-              </div>
-              <div class="highlight-item">
-                <i class="fas fa-briefcase"></i>
-                <div>
-                  <strong>Current Role</strong>
-                  <p>Senior Full-Stack Engineer</p>
-                </div>
-              </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px;">
+            <div style="background: var(--main-bg); padding: 16px; border-radius: 6px; text-align: center;">
+              <div style="color: var(--text-secondary); font-size: 13px;">Total Projects Completed</div>
+              <div style="font-size: 24px; font-weight: 700; margin-top: 4px;">12</div>
+            </div>
+            <div style="background: var(--main-bg); padding: 16px; border-radius: 6px; text-align: center;">
+              <div style="color: var(--text-secondary); font-size: 13px;">Live Applications</div>
+              <div style="font-size: 24px; font-weight: 700; margin-top: 4px; color: var(--success);">6</div>
+            </div>
+            <div style="background: var(--main-bg); padding: 16px; border-radius: 6px; text-align: center;">
+              <div style="color: var(--text-secondary); font-size: 13px;">GitHub Contributions</div>
+              <div style="font-size: 24px; font-weight: 700; margin-top: 4px;">2.5k+</div>
+            </div>
+            <div style="background: var(--main-bg); padding: 16px; border-radius: 6px; text-align: center;">
+              <div style="color: var(--text-secondary); font-size: 13px;">Years of Experience</div>
+              <div style="font-size: 24px; font-weight: 700; margin-top: 4px;">8+</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Skills Section -->
-      <section id="skills" class="section">
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Tech Stack & Skills</h2>
-          </div>
-          <div class="skills-grid">
-            <div class="skill-category">
-              <h3 class="skill-category-title">
-                <i class="fas fa-laptop-code"></i> Frontend
-              </h3>
-              <div class="skill-tags">
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Next.js</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">Vue.js</span>
-                <span class="skill-tag">Tailwind CSS</span>
-                <span class="skill-tag">Redux</span>
-                <span class="skill-tag">Webpack</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h3 class="skill-category-title">
-                <i class="fas fa-server"></i> Backend
-              </h3>
-              <div class="skill-tags">
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">NestJS</span>
-                <span class="skill-tag">Express</span>
-                <span class="skill-tag">GraphQL</span>
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Django</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h3 class="skill-category-title">
-                <i class="fas fa-database"></i> Database
-              </h3>
-              <div class="skill-tags">
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">Redis</span>
-                <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">Prisma</span>
-                <span class="skill-tag">TypeORM</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h3 class="skill-category-title">
-                <i class="fas fa-cloud"></i> DevOps & Cloud
-              </h3>
-              <div class="skill-tags">
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">Kubernetes</span>
-                <span class="skill-tag">CI/CD</span>
-                <span class="skill-tag">GitHub Actions</span>
-                <span class="skill-tag">Terraform</span>
-                <span class="skill-tag">Nginx</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="section">
+      <section id="projects">
         <div class="card">
           <div class="card-header">
             <h2 class="card-title">Featured Projects</h2>
-            <a href="#" class="btn btn-primary"><i class="fas fa-plus"></i> New Project</a>
+            <a href="#" class="btn btn-primary"><i class="fas fa-plus"></i> Start New Project</a>
           </div>
 
           <div class="projects-grid">
+            <!-- Project 1 -->
             <div class="project-card">
               <div class="project-header">
                 <div>
-                  <div class="project-name">SyncMeet</div>
-                  <div class="project-meta">WebRTC Conferencing Platform</div>
+                  <div class="project-name">SyncMeet Pro</div>
+                  <div class="project-meta">Enterprise Video Conferencing Solution</div>
                 </div>
-                <span class="badge live">Live</span>
+                <span class="badge live">Deployed</span>
               </div>
               <div class="project-body">
-                <p class="project-desc">
-                  Real-time collaborative video conferencing with integrated whiteboard and E2E encryption. 
-                  Supports up to 50 participants with HD quality. Deployed on AWS with auto-scaling.
-                </p>
+                <p class="project-desc">A secure, real-time collaboration platform featuring video conferencing, interactive whiteboards, and end-to-end encryption. Optimized for enterprise use with AWS infrastructure for high availability and scalability.</p>
                 <div class="tech-tags">
-                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">React.js</span>
                   <span class="tech-tag">WebRTC</span>
                   <span class="tech-tag">Socket.io</span>
                   <span class="tech-tag">Node.js</span>
                   <span class="tech-tag">AWS</span>
                 </div>
-                <div class="project-stats">
-                  <span><i class="fas fa-star"></i> 342</span>
-                  <span><i class="fas fa-code-branch"></i> 28</span>
-                  <span><i class="fas fa-eye"></i> 1.2k</span>
-                </div>
                 <div class="project-links">
-                  <a href="#" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                  <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source</a>
+                  <a href="#" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                  <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Repository</a>
                 </div>
               </div>
             </div>
 
+            <!-- Project 2 -->
             <div class="project-card">
               <div class="project-header">
                 <div>
-                  <div class="project-name">AuthGuard</div>
-                  <div class="project-meta">Authentication API Service</div>
+                  <div class="project-name">AuthGuard Enterprise</div>
+                  <div class="project-meta">Secure Authentication Service</div>
                 </div>
-                <span class="badge live">Live</span>
+                <span class="badge live">Deployed</span>
               </div>
               <div class="project-body">
-                <p class="project-desc">
-                  Production-ready authentication service with OAuth 2.0, MFA, and comprehensive audit logs. 
-                  Supports both REST and GraphQL endpoints with rate limiting and DDoS protection.
-                </p>
+                <p class="project-desc">Comprehensive authentication system supporting OAuth, multi-factor authentication, and detailed audit logging. Provides RESTful and GraphQL APIs for seamless integration into any application stack.</p>
                 <div class="tech-tags">
                   <span class="tech-tag">NestJS</span>
                   <span class="tech-tag">PostgreSQL</span>
                   <span class="tech-tag">JWT</span>
                   <span class="tech-tag">Redis</span>
-                  <span class="tech-tag">Docker</span>
-                </div>
-                <div class="project-stats">
-                  <span><i class="fas fa-star"></i> 567</span>
-                  <span><i class="fas fa-code-branch"></i> 45</span>
-                  <span><i class="fas fa-eye"></i> 2.1k</span>
+                  <span class="tech-tag">GraphQL</span>
                 </div>
                 <div class="project-links">
-                  <a href="#" class="btn btn-outline"><i class="fas fa-book"></i> Docs</a>
-                  <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Repo</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <div class="project-header">
-                <div>
-                  <div class="project-name">CloudDash</div>
-                  <div class="project-meta">Cloud Infrastructure Monitor</div>
-                </div>
-                <span class="badge live">Live</span>
-              </div>
-              <div class="project-body">
-                <p class="project-desc">
-                  Real-time monitoring dashboard for AWS infrastructure with cost optimization insights. 
-                  Includes alerting system and custom metrics visualization.
-                </p>
-                <div class="tech-tags">
-                  <span class="tech-tag">Next.js</span>
-                  <span class="tech-tag">AWS SDK</span>
-                  <span class="tech-tag">D3.js</span>
-                  <span class="tech-tag">Serverless</span>
-                </div>
-                <div class="project-stats">
-                  <span><i class="fas fa-star"></i> 198</span>
-                  <span><i class="fas fa-code-branch"></i> 15</span>
-                  <span><i class="fas fa-eye"></i> 890</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                  <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Source</a>
+                  <a href="#" class="btn btn-outline"><i class="fas fa-book"></i> Documentation</a>
+                  <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Repository</a>
                 </div>
               </div>
             </div>
@@ -403,237 +165,72 @@
         </div>
       </section>
 
-      <!-- Code Samples Section -->
-      <section id="code" class="section">
+      <section id="code">
         <div class="card">
           <div class="card-header">
-            <h2 class="card-title">Code Samples</h2>
+            <h2 class="card-title">Professional Code Samples</h2>
           </div>
-          <p class="section-description">
-            Production-ready, typed, and thoroughly tested patterns that I use in my daily work. 
-            Feel free to use them in your projects.
+          <p style="margin-bottom: 16px; color: var(--text-secondary);">
+            Curated examples of reusable, type-safe, and production-ready code patterns from my professional toolkit.
           </p>
 
-          <div class="code-sample">
-            <div class="code-sample-header">
-              <span class="code-filename">
-                <i class="fas fa-file-code"></i> auth.middleware.ts
-              </span>
-              <button class="btn-copy" onclick="copyCode(this)">
-                <i class="fas fa-copy"></i> Copy
-              </button>
-            </div>
-            <pre class="code-block"><code>import { verify } from 'jsonwebtoken';
+          <span class="lang">// auth.middleware.ts (TypeScript Middleware for Authentication)</span>
+          <pre class="code-block"><code>import { verify } from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 
-interface AuthRequest extends Request {
-  user?: any;
-}
-
-export const authMiddleware = async (
-  req: AuthRequest,
-  res: Response,
-  next: NextFunction
-) => {
+export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
   const token = req.headers.authorization?.split(' ')[1];
-  
-  if (!token) {
-    return res.status(401).json({ error: 'No token provided' });
-  }
+  if (!token) return res.status(401).json({ error: 'Authentication token missing' });
 
   try {
-    const payload = verify(token, process.env.JWT_SECRET!);
+    const payload = verify(token, process.env.JWT_SECRET as string);
     req.user = payload;
     next();
   } catch (err) {
     res.status(403).json({ error: 'Invalid or expired token' });
   }
 };</code></pre>
-          </div>
 
-          <div class="code-sample">
-            <div class="code-sample-header">
-              <span class="code-filename">
-                <i class="fas fa-file-code"></i> useDebounce.ts
-              </span>
-              <button class="btn-copy" onclick="copyCode(this)">
-                <i class="fas fa-copy"></i> Copy
-              </button>
-            </div>
-            <pre class="code-block"><code>import { useState, useEffect } from 'react';
+          <span class="lang">// useDebounce.ts (React Custom Hook with TypeScript)</span>
+          <pre class="code-block"><code>import { useState, useEffect } from 'react';
 
-/**
- * Custom hook for debouncing values
- * @param value - The value to debounce
- * @param delay - Delay in milliseconds
- */
-export function useDebounce<T>(value: T, delay: number): T {
-  const [debouncedValue, setDebouncedValue] = useState<T>(value);
+export function useDebounce&lt;T&gt;(value: T, delay: number): T {
+  const [debouncedValue, setDebouncedValue] = useState&lt;T&gt;(value);
 
   useEffect(() => {
-    const handler = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
-
+    const handler = setTimeout(() => setDebouncedValue(value), delay);
     return () => clearTimeout(handler);
   }, [value, delay]);
 
   return debouncedValue;
-}
-
-// Usage example:
-// const searchTerm = useDebounce(inputValue, 500);</code></pre>
-          </div>
+}</code></pre>
         </div>
       </section>
 
-      <!-- Experience Section -->
-      <section id="experience" class="section">
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Work Experience</h2>
+      <section id="discord">
+        <div class="card discord-widget">
+          <h3 class="discord-title">Join My Professional Network on Discord</h3>
+          <div class="discord-status">
+            <span class="discord-dot"></span>
+            <span>Alex Rivera — Available for Discussions</span>
           </div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3>Senior Full-Stack Engineer</h3>
-                  <span class="timeline-date">2022 - Present</span>
-                </div>
-                <div class="timeline-company">TechCorp Inc.</div>
-                <p class="timeline-desc">
-                  Leading development of cloud-native applications using microservices architecture. 
-                  Mentoring junior developers and establishing best practices for CI/CD pipelines.
-                </p>
-                <div class="timeline-achievements">
-                  <div class="achievement-item">
-                    <i class="fas fa-check-circle"></i>
-                    Reduced deployment time by 60% through automated CI/CD
-                  </div>
-                  <div class="achievement-item">
-                    <i class="fas fa-check-circle"></i>
-                    Architected scalable system handling 1M+ daily requests
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3>Full-Stack Developer</h3>
-                  <span class="timeline-date">2020 - 2022</span>
-                </div>
-                <div class="timeline-company">StartupXYZ</div>
-                <p class="timeline-desc">
-                  Built and maintained customer-facing web applications. Implemented real-time features 
-                  using WebSocket and optimized database queries for better performance.
-                </p>
-                <div class="timeline-achievements">
-                  <div class="achievement-item">
-                    <i class="fas fa-check-circle"></i>
-                    Improved app performance by 40% through code optimization
-                  </div>
-                  <div class="achievement-item">
-                    <i class="fas fa-check-circle"></i>
-                    Launched 3 major features with 99.9% uptime
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3>Junior Developer</h3>
-                  <span class="timeline-date">2019 - 2020</span>
-                </div>
-                <div class="timeline-company">Digital Solutions Ltd.</div>
-                <p class="timeline-desc">
-                  Started my professional journey building responsive web applications and RESTful APIs. 
-                  Collaborated with cross-functional teams in Agile environment.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="section">
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Get In Touch</h2>
-          </div>
-          <div class="contact-content">
-            <p class="section-description">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. 
-              Feel free to reach out through any of these channels:
-            </p>
-            <div class="contact-grid">
-              <a href="mailto:alex@example.com" class="contact-card">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-info">
-                  <strong>Email</strong>
-                  <p>alex@example.com</p>
-                </div>
-              </a>
-              <a href="https://linkedin.com/in/alexrivera" target="_blank" class="contact-card">
-                <div class="contact-icon">
-                  <i class="fab fa-linkedin-in"></i>
-                </div>
-                <div class="contact-info">
-                  <strong>LinkedIn</strong>
-                  <p>@alexrivera</p>
-                </div>
-              </a>
-              <a href="https://github.com/alexrivera" target="_blank" class="contact-card">
-                <div class="contact-icon">
-                  <i class="fab fa-github"></i>
-                </div>
-                <div class="contact-info">
-                  <strong>GitHub</strong>
-                  <p>@alexrivera</p>
-                </div>
-              </a>
-              <a href="https://twitter.com/alexrivera" target="_blank" class="contact-card">
-                <div class="contact-icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="contact-info">
-                  <strong>Twitter</strong>
-                  <p>@alexrivera</p>
-                </div>
-              </a>
-            </div>
-          </div>
+          <div id="discord-widget"></div>
+          <p style="margin-top: 12px; font-size: 13px; color: var(--text-secondary);">
+            Connect with me in my developer community for project updates, open-source contributions, technical discussions, and potential collaborations.
+          </p>
         </div>
       </section>
     </div>
 
     <footer class="footer">
-      <div class="footer-content">
-        <p>© 2025 Alex Rivera • Built with ❤️ and TypeScript</p>
-        <p class="footer-subtitle">
-          Inspired by Discord Developer Portal – for developers, by developers.
-        </p>
-        <div class="footer-links">
-          <a href="#privacy">Privacy Policy</a>
-          <span>•</span>
-          <a href="#terms">Terms of Service</a>
-          <span>•</span>
-          <a href="#sitemap">Sitemap</a>
-        </div>
-      </div>
+      <p>© 2025 Alex Rivera • Crafted with Precision using TypeScript and Modern Web Technologies</p>
+      <p style="margin-top: 8px; font-size: 12px;">
+        Inspired by Professional Developer Portals — Empowering Innovation Through Code.
+      </p>
     </footer>
   </main>
 
-  <!-- Scripts -->
+  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
