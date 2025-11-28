@@ -1,10 +1,9 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Enable Pages Router explicitly
-  experimental: {
-    appDir: false,
-  },
+  swcMinify: true,
+  // JANGAN tambahkan appDir jika pakai Pages Router
 };
 
 module.exports = nextConfig;
