@@ -84,31 +84,38 @@ function updateDiscordWidget(theme) {
   `;
 }
 
-// ==== Flip Cards on Click ===
-document.querySelectorAll('.flip-card').forEach(card => {
-  card.addEventListener('click', () => {
-    card.classList.toggle('flipped');
-  });
-});
+// ==== Skills shuffle animation (only on skills.html) ====
+const skillsGrid = document.querySelector('.skills-card-grid');
+if (skillsGrid) {
+  const cards = Array.from(skillsGrid.querySelectorAll('.skill-card'));
 
-// ==== Shuffle Skills on Click (only on skills.html) ====
-if (document.querySelector('.skills-grid')) {
-  const skillsGrid = document.querySelector('.skills-grid');
-  skillsGrid.addEventListener('click', (e) => {
-    if (e.target.closest('.skill-item')) {
-      const skills = Array.from(skillsGrid.children);
-      skills.sort(() => Math.random() - 0.5);
-      skills.forEach(skill => skillsGrid.appendChild(skill));
-      skillsGrid.style.transition = 'all 0.5s ease';
-      setTimeout(() => skillsGrid.style.transition = '', 500);
-    }
+  function shuffleSkillCards() {
+    const currentCards = Array.from(skillsGrid.querySelectorAll('.skill-card'));
+
+    // Randomize order
+    const shuffled = currentCards
+      .map(card => ({ card, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(obj => obj.card);
+
+    shuffled.forEach((card, index) => {
+      // small random offset for "shuffling" feeling
+      const offsetX = (Math.random() - 0.5) * 24;
+      const offsetY = (Math.random() - 0.5) * 24;
+      const rotate = (Math.random() - 0.5) * 10;
+      card.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${rotate}deg)`;
+      card.style.order = index;
+    });
+
+    // smooth back to grid
+    setTimeout(() => {
+      shuffled.forEach(card => {
+        card.style.transform = '';
+      });
+    }, 350);
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('click', shuffleSkillCards);
   });
 }
-
-// Tambahkan di akhir script.js
-document.querySelectorAll('.flip-card').forEach(card => {
-  card.addEventListener('click', () => {
-    card.classList.toggle('flipped');
-  });
-});
-
