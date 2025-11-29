@@ -1,5 +1,6 @@
-
-
+/* styles.css */
+/* ===== THEME SYSTEM ===== */
+/* Default: light mode */
 :root {
   --header-bg: #f2f3f5;
   --sidebar-bg: #ebedef;
@@ -19,6 +20,7 @@
   --shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
+/* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
   :root {
     --header-bg: #202225;
@@ -35,6 +37,7 @@
   }
 }
 
+/* Forced override if user toggles manually */
 html[data-theme="light"] {
   --header-bg: #f2f3f5;
   --sidebar-bg: #ebedef;
@@ -62,6 +65,7 @@ html[data-theme="dark"] {
   --code-text: #dcddde;
 }
 
+/* ===== BASE STYLES ===== */
 * {
   margin: 0;
   padding: 0;
@@ -77,6 +81,7 @@ body {
   min-height: 100vh;
 }
 
+/* ===== Sidebar ===== */
 .sidebar {
   width: 240px;
   background: var(--sidebar-bg);
@@ -131,13 +136,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: white;
-  flex-shrink: 0;
+  object-fit: cover;
 }
 
 .user-info {
@@ -241,6 +240,7 @@ body {
   text-align: center;
 }
 
+/* ===== Main Content ===== */
 .main {
   flex: 1;
   margin-left: 240px;
@@ -461,6 +461,7 @@ body {
   background: var(--accent-hover);
 }
 
+/* Stats Grid */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -489,6 +490,7 @@ body {
   color: var(--success);
 }
 
+/* Code */
 .code-block {
   background: var(--code-bg);
   border-radius: 6px;
@@ -507,6 +509,7 @@ body {
   display: block;
 }
 
+/* Discord Widget */
 .discord-widget {
   background: var(--card-bg);
   border-radius: 8px;
@@ -534,6 +537,7 @@ body {
   background: var(--success);
 }
 
+/* Footer */
 .footer {
   padding: 24px;
   font-size: 13px;
@@ -547,6 +551,7 @@ body {
   font-size: 12px;
 }
 
+/* Overlay for mobile sidebar */
 .overlay {
   display: none;
   position: fixed;
@@ -558,6 +563,96 @@ body {
   z-index: 99;
 }
 
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px; /* Untuk scroll bar jika perlu */
+}
+
+.skill-item {
+  flex: 0 0 200px; /* Fixed width agar menyamping */
+  background: var(--main-bg);
+  padding: 16px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+/* Scrollbar styling for skills-grid */
+.skills-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.skills-grid::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+.skills-grid::-webkit-scrollbar-track {
+  background: var(--border);
+}
+
+.skill-item i {
+  font-size: 32px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.skill-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.skill-item ul {
+  list-style: none;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.skill-item li {
+  margin-bottom: 4px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--main-bg);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+/* Improved Mobile Responsiveness */
 @media (max-width: 1024px) {
   .sidebar {
     width: 220px;
@@ -647,81 +742,4 @@ body {
   .footer-note {
     font-size: 11px;
   }
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.skill-item {
-  background: var(--main-bg);
-  padding: 16px;
-  border-radius: 6px;
-  text-align: center;
-  box-shadow: var(--shadow);
-}
-
-.skill-item i {
-  font-size: 32px;
-  color: var(--accent);
-  margin-bottom: 12px;
-}
-
-.skill-item h3 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.skill-item ul {
-  list-style: none;
-  font-size: 14px;
-  color: var(--text-secondary);
-}
-
-.skill-item li {
-  margin-bottom: 4px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 8px;
-  color: var(--text-secondary);
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 12px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  background: var(--main-bg);
-  color: var(--text-primary);
-  font-size: 14px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--accent);
-  outline: none;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
 }
